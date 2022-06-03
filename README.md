@@ -1,5 +1,6 @@
 ## NFT marketplace built on XRP Ledger
 ![XRPNFT-the-largest-XRPL-NFT-marketplace-1](https://user-images.githubusercontent.com/106753424/171854981-96c64069-60d0-4e02-9adc-b00a0fae5a42.png)
+![Account-Info](https://user-images.githubusercontent.com/106753424/171855464-b2da0dff-ae9c-4b59-b28e-a5684bd0b0bf.png)
 
 
 ### About XLS-20 NFT-Devnet from RippleX
