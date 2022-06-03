@@ -1,0 +1,42 @@
+.spinnerContainer {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.spinnerItem1 {
+    margin: 16px;
+    padding: 8px;
+    border: 1px solid #00AB55;
+    border-radius: 4px;
+    text-align: center;
+}
+
+  
+.spinnerItem2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    position: relative;
+    border: 1px solid #00AB55;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+.spinnerTitle {
+    position: absolute;
+    bottom: 10px;
+}

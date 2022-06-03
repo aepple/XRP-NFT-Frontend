@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>xrpld WebSocket Client</title>
+    <!-- jQuery -->
+    <script src="browser.min.js"></script>
+    <script>
+		const {XrplClient} = require('xrpl-client')
+
+		const main = async () => {
+			const client = new XrplClient('wss://xrplcluster.com')
+		  client.on('ledger', ledger => {
+		    document.getElementById('ledger').innerText = JSON.stringify(ledger, null, 2)
+		  })
+		  const account = document.getElementById('address').innerText
+		  setInterval(() => {
+			  document.getElementById('state').innerText = JSON.stringify(client.getState(), null, 2)
+		  }, 4000)
+		  const accountLines = await client.send({command:"account_lines", account })
+		  document.getElementById('account').innerText = JSON.stringify(accountLines.lines[0], null, 2)
+		}
+	</script>
+</head>
+<!-- 
+Connect to the XRP Ledger using websockets
+https://xrplcluster.com/
+ -->
+<body onload="main()">
+	<noscript>You need to enable JavaScript to run this app.</noscript>
+	<h1 id="address"><code>rwietsevLFg8XSmG3bEZzFein1g8RBqWDZ</code></h1>
+	<h1>Ledger</h1>
+	<pre id="ledger">Ledger info loading...</pre>
+	<h1>Account</h1>
+	<pre id="account">Account info loading...</pre>
+	<h1>State</h1>
+	<pre id="state">State info loading...</pre>
+</body>
+</html>

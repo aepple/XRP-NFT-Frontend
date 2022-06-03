@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>XRP Faucets - XRPL.org</title>
+    <!-- jQuery -->
+    <script src="jquery-3.6.0.min.js"></script>
+    
+	<script type='text/javascript' src='test-net.js'></script>
+    <!-- Stylesheet -->
+    <link href="devportal2021-v6.css" rel="stylesheet" />
+</head>
+
+<body class="xrp-ledger-dev-portal" data-spy="scroll" data-target=".page-toc" data-offset="0">
+
+<h2>XRP Faucets</h2>
+
+<div class="content">
+ <div class="btn-toolbar" role="toolbar" aria-label="Button">
+  <button id="testnet-creds-button" class="btn btn-primary mr-2 mb-2">Generate Testnet credentials</button>
+  <button id="devnet-creds-button" class="btn btn-primary mr-2 mb-2">Generate Devnet credentials</button>
+  <button id="nftnet-creds-button" class="btn btn-primary mr-2 mb-2">Generate NFT-Devnet credentials</button>
+</div><!--/.btn-toolbar-->
+<div id='your-credentials'></div>
+<div id='loader' style="display: none;"><img class="throbber" src="xrp-loader-96.png"> Generating Keys...</div>
+<div id='address'></div>
+<div id='secret'></div>
+<div id='balance'></div>
+<div id='sequence'> <div id='loader' style="display: none;"><img class="throbber" src="xrp-loader-96.png"> Waiting...</div></div>
+</div>
+
+</body>
+</html>
